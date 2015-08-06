@@ -68,4 +68,6 @@ theme: casper
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/jluchiji/jluchiji.github.io.git
+  branch:: master
