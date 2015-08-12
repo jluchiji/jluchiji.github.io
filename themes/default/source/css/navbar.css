@@ -1,0 +1,84 @@
+/**
+ * Base styles
+ */
+nav#navbar {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  transition: height 0.3s ease, padding 0.3s ease;
+  background: #FFFFFF;
+  /*border-bottom: 1px solid #F0F0F0;*/
+}
+
+nav#navbar #main-logo {
+  display: block;
+  transition: height 0.3s ease, width 0.3s ease, padding 0.3s ease;
+}
+
+nav#navbar #main-logo svg path {
+  fill: #ED2939;
+}
+
+/**
+ * Not on top
+ */
+nav#navbar.scroll {
+  border-bottom-color: #FFFFFF;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+
+/**
+ * Desktop / Tablet
+ */
+@media (min-width: 768px) {
+
+  /* Expanded state */
+  nav#navbar {
+    height: 122px;
+  }
+  nav#navbar #main-logo {
+    width:   92px;
+    height:  92px;
+    padding: 15px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+
+  /**
+   * Compact state
+   */
+  nav#navbar.compact {
+    height: 68px;
+  }
+  nav#navbar.compact #main-logo {
+    width:   48px;
+    height:  48px;
+    padding: 10px;
+  }
+
+
+}
+
+/**
+ * Mobile
+ */
+@media (max-width: 767px) {
+
+  nav#navbar {
+    height: 58px;
+  }
+  nav#navbar #main-logo {
+    float: left;
+
+    width: 48px;
+    height: 48px;
+    padding: 5px;
+  }
+
+}
