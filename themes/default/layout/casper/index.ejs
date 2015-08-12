@@ -11,7 +11,7 @@
       <% if (post.excerpt){ %>
         <%- post.excerpt %>
       <% } else { %>
-        <%- post.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 220) %>
+        <%- post.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 220) %>...
       <% } %>
       </p>
       <% if (theme.excerpt_link) { %>
