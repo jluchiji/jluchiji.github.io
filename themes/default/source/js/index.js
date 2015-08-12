@@ -11,7 +11,7 @@ $(function(){
   $('nav#navbar').headroom({
     offset: 20,
     tolerance: {
-      up: 20,
+      up:   20,
       down: 40
     },
     classes: {
